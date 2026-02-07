@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, booktabs, xcolor, hyperref, geometry}
+
+\geometry{margin=1in}
+\definecolor{navyblue}{RGB}{0,0,128}
+
+\title{
+    \vspace{-0.5in}
+    \textbf{\textcolor{navyblue}{Equity Analysis Report: Big Tech Growth Dynamics}} \\
+    \large \textit{A Comparative Study of AAPL, MSFT, and GOOGL}
+}
+\author{\textbf{DERRAG Mariya} \\ \small GitHub: \url{https://github.com/Mariyyyaaella}}
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary}
+This report investigates the relationship between market performance and fundamental health for three of the world’s largest technology firms. By integrating live financial data via the \texttt{yfinance} API, the study quantifies how valuation ($\text{P/E Ratio}$), profitability ($\text{Margins}$), and expansion ($\text{Revenue Growth}$) dictate investor returns. The analysis concludes that the market is currently operating under a \textbf{Growth-Dominant Regime}.
+
+\section{Quantitative Methodology}
+The project utilized a two-pronged data approach:
+\begin{itemize}
+    \item \textbf{Technical Data:} Time-series analysis of Adjusted Close prices to calculate daily volatility and total period returns.
+    \item \textbf{Fundamental Data:} Extraction of valuation multiples and growth percentages to build a cross-sectional correlation matrix.
+\end{itemize}
+
+\section{Correlation Analysis \& Interpretation}
+
+\subsection{The Growth Driver: Return vs. Revenue Growth ($\rho = +0.67$)}
+A strong positive correlation confirms that markets are heavily rewarding companies that show aggressive top-line expansion. Investors are currently "buying the future," where growth expectations have decoupled from immediate dividend safety.
+
+\subsection{The Valuation Paradox: Profit Margin vs. Forward P/E ($\rho = -0.98$)}
+A striking near-perfect inverse relationship exists between current profitability and valuation multiples. 
+\textit{Insight:} Highly efficient, high-margin firms (like Microsoft) are treated as "mature utilities," leading to valuation compression.
+
+\subsection{Size vs. Value: Market Cap vs. Forward P/E ($\rho = +0.85$)}
+Data indicates that "size is a moat." In an uncertain economic climate, investors pay a "safety premium" for the liquidity and stability of the largest mega-cap stocks.
+
+\section{Individual Ticker Performance}
+The following table synthesizes the performance metrics and qualitative sentiment for the period of February 2024 to February 2026.
+
+\begin{table}[h!]
+\centering
+\caption{Summary of Financial Performance (Feb 2024 -- Feb 2026)}
+\label{tab:performance_summary}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Ticker} & \textbf{Total Return} & \textbf{Key Strength} & \textbf{Analyst Sentiment} \\ \midrule
+Alphabet (GOOGL) & $\sim$70\% & Revenue Growth & \textbf{Outperform} \\
+Apple (AAPL)     & $\sim$20\% & Stability/Market Cap  & \textbf{Market Perform} \\
+Microsoft (MSFT) & $\sim$2\%  & Profit Margin (47\%)  & \textbf{Underperform} \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Market Context \& Validation}
+The empirical results align with the bifurcated market sentiment observed in early 2026. While the quantitative data confirms a \textbf{Growth-Dominant Regime}, certain anomalies in the correlation matrix warrant a qualitative overlay.
+
+\subsection{The AI Monetization Gap}
+A defining characteristic of the current period is the market's ruthless prioritization of \textit{Revenue Growth Velocity} over traditional bottom-line stability. 
+\begin{itemize}
+    \item \textbf{Alphabet (GOOGL):} Successfully captured "Alpha" by demonstrating a direct link between Gemini-integrated Search and Cloud revenue.
+    \item \textbf{Microsoft (MSFT):} Despite maintaining a superior operating margin, the stock faced valuation compression as investors signaled that high efficiency is insufficient without accelerating top-line growth to justify AI CapEx.
+\end{itemize}
+
+\section{Conclusion}
+Alphabet (GOOGL) was the optimal investment choice for this period. While Microsoft maintained superior operational efficiency, Alphabet successfully aligned with the market's focus: \textbf{Revenue Growth Velocity.} For alpha generation in the current cycle, top-line expansion remains the leading indicator.
+
+\end{document}
