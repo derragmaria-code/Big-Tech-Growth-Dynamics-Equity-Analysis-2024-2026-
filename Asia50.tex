@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, booktabs, xcolor, hyperref, geometry, mdframed}
+
+\geometry{margin=1in}
+\definecolor{darkred}{RGB}{139,0,0}
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{lightgrey}{RGB}{245,245,245}
+
+\title{
+    \vspace{-0.5in}
+    \textbf{\textcolor{darkred}{Geographic Factor Divergence:}} \\
+    \large \textit{Growth-Decoupling in the US vs. Fundamental Alpha in Asia (2026)}
+}
+\author{\textbf{DERRAG Mariya} \\ \small Quantitative Research Portfolio}
+\date{February 8, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Hypothesis \& Abstract}
+This study performs a cross-border stress test on the \textbf{Growth-Dominant Regime} theory. By comparing the Top 20 US Tech constituents against the Top 50 Asian Market Leaders, we identify a critical geographic bias. While the US market has decoupled from revenue velocity ($P = 0.84$), the Asian market exhibits a robust, statistically significant correlation between growth and returns ($P < 0.0001$).
+
+\section{The Asian Market "Clean Signal"}
+In sharp contrast to the US "noise," the Asian dataset ($N=50$) demonstrates that fundamentals still dictate price action in the East.
+
+\begin{mdframed}[backgroundcolor=lightgrey, linecolor=darkred, linewidth=1pt]
+\centering
+\textbf{Regional Statistical Verdict (Asia)} \\
+Pearson Correlation ($r$): \textbf{0.6067} \quad | \quad P-Value: \textbf{0.0000} \\
+\textit{Conclusion: Highly Significant. Revenue growth remains a primary Alpha factor in Asian equities.}
+\end{mdframed}
+
+\section{Comparative Data Analysis}
+The Asian leaders, specifically in the semiconductor and hardware sectors, show a clear linear progression: high growth results in high returns.
+
+\begin{table}[h!]
+\centering
+\caption{Top Asian Performance Tier (Feb 2025 -- Feb 2026)}
+\label{tab:asia_results}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Ticker} & \textbf{Region} & \textbf{Revenue Growth} & \textbf{Total Return} \\ \midrule
+\textbf{000660.KS} (SK Hynix) & Korea  & $+66.1\%$ & $+316.5\%$ \\
+\textbf{005930.KS} (Samsung)  & Korea  & $+23.8\%$ & $+200.0\%$ \\
+\textbf{2308.TW} (Delta)      & Taiwan & $+34.0\%$ & $+183.1\%$ \\
+\textbf{2330.TW} (TSMC)       & Taiwan & $+20.5\%$ & $+62.2\%$ \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{The Core Divergence: US vs. Asia}
+The primary findings suggest a "Regime Gap" driven by the following factors:
+\begin{enumerate}
+    \item \textbf{Valuation Maturity:} US tech (e.g., PLTR, META) has already priced in future growth, leading to "Growth Exhaustion." 
+    \item \textbf{Execution vs. Narrative:} Asian returns are tied to physical production (Foundries/Memory). As demand for AI hardware remains high, firms like \textbf{SK Hynix} and \textbf{Samsung} are seeing direct fundamental-to-price translation.
+    \item \textbf{The Efficiency Gap:} The US market is currently driven by \textit{narrative pivots} (e.g., Intel), whereas Asia remains a \textit{fundamentalist's market}.
+\end{enumerate}
+
+
+
+\section{Conclusion for Institutional Strategy}
+The "Growth Paradox" is a \textbf{US-specific phenomenon}. For the remainder of 2026, quantitative strategies should favor:
+\begin{itemize}
+    \item \textbf{Short-Growth / Long-Strategic} in US Tech.
+    \item \textbf{Long-Growth / Fundamental Tracking} in Asian Semis and Hardware.
+\end{itemize}
+
+\end{document}
