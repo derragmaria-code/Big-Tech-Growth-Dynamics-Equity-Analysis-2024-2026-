@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, booktabs, xcolor, hyperref, geometry, mdframed}
+
+\geometry{margin=1in}
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{lightgrey}{RGB}{245,245,245}
+
+\title{
+    \vspace{-0.5in}
+    \textbf{\textcolor{navyblue}{Market Regime Analysis: The 2026 Growth Paradox}} \\
+    \large \textit{Statistical Stress-Testing of the Top 20 NASDAQ Constituents}
+}
+\author{\textbf{DERRAG Mariya} \\ \small GitHub: \url{https://github.com/Mariyyyaaella}}
+\date{February 8, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary}
+In the 2024--2025 cycle, equity premiums were primarily driven by \textbf{Revenue Velocity}. However, as of February 2026, a cross-sectional analysis of the Top 20 technology firms suggests a total decoupling of growth from returns. This report documents a transition from a \textit{Growth-Dominant Regime} to a \textit{Strategic Value Regime}.
+
+\section{Quantitative Methodology}
+To validate the initial hypothesis, the study expanded from a 3-ticker pilot to a 20-ticker universe ($N=20$). 
+\begin{itemize}
+    \item \textbf{Variables:} 1-Year Total Return ($Y$) vs. TTM Revenue Growth ($X$).
+    \item \textbf{Statistical Test:} Pearson Correlation Coefficient ($r$) and P-Value significance.
+    \item \textbf{Data Source:} \texttt{yfinance} API (Live 2026 Data).
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=lightgrey, linecolor=navyblue, linewidth=1pt]
+\centering
+\textbf{The Statistical Verdict} \\
+Correlation ($r$): \textbf{$-0.0480$} \quad | \quad P-Value: \textbf{$0.8406$} \\
+\textit{Conclusion: The relationship is statistically insignificant. Growth is currently a non-predictive factor for returns.}
+\end{mdframed}
+
+\section{Comparative Performance Matrix}
+The following table highlights the "Regime Breakers" that neutralized the correlation.
+
+\begin{table}[h!]
+\centering
+\caption{Selected Performance Data (Feb 2025 -- Feb 2026)}
+\label{tab:20_firms}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Ticker} & \textbf{Revenue Growth} & \textbf{Total Return} & \textbf{Market Narrative} \\ \midrule
+\textbf{INTC}   & $-4.1\%$                & $+164.8\%$            & Strategic Turnaround \\
+\textbf{ASML}   & $+4.9\%$                & $+96.0\%$             & Monopoly Moat \\
+\textbf{AMD}    & $+34.1\%$               & $+93.7\%$             & Growth Outperformer \\
+\textbf{PLTR}   & $+70.0\%$               & $+22.6\%$             & Growth Exhaustion \\
+\textbf{META}   & $+23.8\%$               & $-7.1\%$              & Valuation Compression \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\section{Analysis of Anomalies}
+
+\subsection{The Intel (INTC) Anomaly}
+Intel represents the most significant outlier. Despite negative revenue growth, it outperformed the sample. This indicates that the market is pricing \textbf{Strategic Sovereignty} (Foundry expansion) over immediate top-line expansion.
+
+\subsection{The Monopoly Premium (ASML)}
+ASML’s return (+96\%) despite modest growth (+4.9\%) proves that in a mature AI cycle, investors prioritize \textbf{Infrastructure Bottlenecks}. 
+
+\section{Conclusion}
+The "Growth-at-any-price" era is over. With a P-value of $0.84$, the data confirms that revenue growth is no longer a reliable signal for alpha generation. For the remainder of 2026, analysts should shift focus toward \textbf{Free Cash Flow Yield} and \textbf{Strategic Criticality}.
+
+\end{document}
