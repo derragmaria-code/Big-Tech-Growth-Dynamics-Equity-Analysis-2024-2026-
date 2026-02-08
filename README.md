@@ -1,68 +1,49 @@
-# Big Tech Growth Dynamics Equity Analysis (2024–2026) 🚀
+# Global Equity Dynamics: The Growth-Decoupling Divergence (2024–2026) 🌍
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
 [![yfinance](https://img.shields.io/badge/yfinance-API-green)](https://pypi.org/project/yfinance/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+[![Stats](https://img.shields.io/badge/Stats-Scipy.stats-orange)](https://scipy.org/)
 
-This project investigates the **shifting relationship between fundamental health and market performance** for mega-cap technology firms. While initially hypothesized as a **"Growth-Dominant Regime,"** stress-testing revealed a transition into a **Strategic Value Regime** in early 2026.
-
----
-
-## Project Overview
-
-This pipeline automates the extraction and statistical validation of financial metrics to identify **market drivers**.  
-
-**Core Question:**  
-> Does top-line revenue growth still dictate investor returns in a post-AI-hype market?
-
-**Key Result:**  
-Quantitative evidence confirms a **regime shift**, where **strategic positioning** (e.g., Foundry expansion, monopoly power) now outweighs simple revenue velocity.
+## 📈 Project Thesis
+Does revenue growth still predict stock returns? This project identifies a **Geographic Regime Divergence**. While the US market has decoupled from fundamentals in 2026, the Asian market maintains a robust, linear relationship between growth and price action.
 
 ---
 
-## 🛠 Data Pipeline
+## 🔬 The "Geographic Bias" Stress Test
+I expanded the initial US-only study to include **50 major Asian constituents** across the TWSE, HKEX, TSE, and KRX to verify if "Growth Exhaustion" was a global phenomenon.
 
-- **Extraction:** Automated retrieval of NASDAQ-20 ticker data via the `yfinance` API.  
-- **Statistical Validation:** Pearson correlation coefficients (\(r\)) and P-values calculated using `scipy.stats`.  
-- **Reporting:** Findings typeset in LaTeX for **institutional-grade documentation**.
+| Market | Sample Size | Correlation ($r$) | P-Value | Regime Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| **US (NASDAQ)** | $N=20$ | $-0.04$ | $0.840$ | **Strategic/Narrative Pivot** |
+| **Asia (Combined)** | $N=50$ | **$+0.61$** | **$< 0.0001$** | **Fundamental Growth** |
 
----
-
-## 📊 Key Findings: From Hypothesis to Reality
-
-| Phase | Hypothesis | Statistical Result | Market Verdict |
-|-------|------------|------------------|----------------|
-| Pilot (N=3) | Growth-Dominant | \( r = +0.98 \) | High correlation; growth rewarded |
-| Stress Test (N=20) | Growth-Dominant | \( r = -0.04 \), \( p = 0.84 \) | Hypothesis invalidated; Strategic Value Pivot |
+### 🛠 Technical Implementation
+- **Cross-Border Pipeline:** Python scripts capable of parsing diverse Yahoo Finance suffixes (`.T`, `.HK`, `.TW`, `.KS`).
+- **Statistical Rigor:** Pearson correlation and Significance testing ($P$-value) to eliminate "random noise" theories.
+- **Reporting:** Formal analysis synthesized using **LaTeX** for institutional-grade documentation.
 
 ---
 
-### The Strategic Value Pivot
+## 🌏 Key Insight: Narrative vs. Execution
+The divergence suggests two distinct market behaviors in 2026:
 
-- **The Anomaly of 2026:** Negative-growth firms (e.g., INTC) **outperformed** high-growth firms (e.g., PLTR) due to **strategic turnaround premiums**.  
-- **The Monopoly Moat:** Infrastructure monopolies (e.g., ASML) maintained **high returns** despite low growth, proving **market criticality** is the new alpha.  
-
+1. **The US "Narrative" Market:** Returns are driven by "strategic turnarounds" (e.g., **INTC**) rather than revenue. Investors are pricing in long-term structural shifts, leading to a breakdown in growth correlation.
+2. **The Asian "Execution" Market:** Returns are tightly tethered to physical output and hardware sales. High-growth semiconductor leaders like **SK Hynix (000660.KS)** saw returns of **+316%** mirroring their **+66%** revenue surge.
 
 
 
 ---
 
-## ✅ Takeaways
-
-1. **Growth alone no longer drives returns** in mega-cap tech.  
-2. **Strategic execution and market dominance** are the primary drivers in 2026.  
-3. Future analyses should emphasize **Free Cash Flow Yield, strategic initiatives, and critical market positioning**.
+## ✅ Conclusions
+- **Alpha is Geographic:** A "Growth" factor strategy would fail in New York but outperform in Seoul or Taipei in the current cycle.
+- **Factor Decay:** US Mega-cap Tech has entered a "Factor Decay" phase where traditional growth metrics are lagging indicators.
 
 ---
 
----
-
-## 🔗 References
-
-- [yfinance API](https://pypi.org/project/yfinance/)  
-- [scipy.stats documentation](https://docs.scipy.org/doc/scipy/reference/stats.html)
-
----
+## ⚙️ How to Reproduce
+1. Clone the repo: `git clone https://github.com/Mariyyyaaella/Global-Equity-Dynamics`
+2. Install: `pip install yfinance scipy pandas`
+3. Run the Global Test: `python global_test.py`
 
 
 
